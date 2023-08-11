@@ -4,12 +4,18 @@ pipeline {
   stages {
     stage ('Build') {
       steps {
-        sh "echo Run a command"
+        echo 'Hi, welcome to pipeline demo...'
      }
    }
     stage ('test') {
       steps {
         sh "echo Run a command"
+      }
+    
+    }
+    stage ('deploy') {
+      steps {
+        echo 'Thanks for using Jenkins Pipeline'
       }
     
     }
